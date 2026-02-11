@@ -47,4 +47,42 @@ Digunakan untuk mengevaluasi pola non-linear dan efek segmentasi dalam data.
 
 ### 5. Ekstraksi Sinyal Berbasis Residual
 
-Residual r
+Residual ratio didefinisikan sebagai berikut :
+$r = (y - y_hat) / y_hat$
+
+dengan:
+- y = harga aktual
+- y_hat = harga prediksi model
+
+Klasifikasi deviasi dilakukan berbasis kuantil:
+
+- Underpriced → 10% terbawah residual ratio
+- Overpriced → 10% teratas residual ratio
+
+Pendekatan berbasis kuantil dipilih karena:
+- Bersifat data-driven (tidak menggunakan ambang batas arbitrer),
+- Adaptif terhadap distribusi residual aktual,
+- Lebih stabil terhadap perbedaan skala harga.
+
+---
+
+## Prinsip Utama
+
+Proyek ini memperlakukan error prediksi sebagai sinyal analitis, bukan sebagai kebenaran pasar.
+
+Deviasi yang teridentifikasi merupakan deviasi relatif terhadap struktur model, bukan bukti definitif adanya mispricing di pasar.
+
+---
+
+## Keterbatasan
+
+Proyek ini memiliki beberapa keterbatasan struktural:
+
+- Model hanya menggunakan fitur struktural yang tersedia dalam dataset.
+- Faktor mikro-lokasi dan atribut kualitatif tidak sepenuhnya tercakup.
+- Residual besar dapat mencerminkan keterbatasan model atau variabel yang tidak teramati.
+- Data menggunakan harga listing, bukan harga transaksi aktual.
+- Klasifikasi deviasi bergantung pada struktur model yang digunakan.
+- Ukuran dataset dapat memengaruhi stabilitas estimasi pada distribusi ekor.
+
+Seluruh keterbatasan ini diakui untuk mencegah overinterpretasi terhadap hasil analisis.
