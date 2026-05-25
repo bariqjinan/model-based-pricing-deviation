@@ -3,7 +3,7 @@
 ## Dataset
 Source: [Daftar Harga Rumah di Kota Bandung](https://www.kaggle.com/datasets/khaleeel347/harga-rumah-seluruh-kecamatan-di-kota-bandung)  
 Author: khaleeel347 (Kaggle)  
-License: sesuai ketentuan Kaggle dataset
+License: CC BY 4.0 (Attribution 4.0 International)
 
 ## Overview
 
