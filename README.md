@@ -1,5 +1,10 @@
 # Analisis Deviasi Harga Berbasis Model pada Data Perumahan Kota Bandung
 
+## Dataset
+Source: [Daftar Harga Rumah di Kota Bandung](https://www.kaggle.com/datasets/khaleeel347/harga-rumah-seluruh-kecamatan-di-kota-bandung)  
+Author: khaleeel347 (Kaggle)  
+License: sesuai ketentuan Kaggle dataset
+
 ## Overview
 
 Proyek ini mengeksplorasi bagaimana error prediksi dari model harga rumah dapat digunakan sebagai sinyal analitis terstruktur, bukan semata-mata dianggap sebagai kelemahan performa model.
